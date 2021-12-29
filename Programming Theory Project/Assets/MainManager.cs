@@ -30,7 +30,7 @@ public class MainManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             nameString = nameField.text;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("game");
         }
 
     }
