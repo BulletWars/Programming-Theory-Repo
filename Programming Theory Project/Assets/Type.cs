@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Type : Projectiles
 {
-    
+     
     // Update is called once per frame
     void Update()
     {
