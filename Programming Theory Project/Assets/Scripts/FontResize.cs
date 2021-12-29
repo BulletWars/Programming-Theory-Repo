@@ -26,7 +26,8 @@ public class FontResize : MonoBehaviour
         }
         if (isGreat)
         {
-            textSize.fontSize -= 1;
+            
+            textSize.fontSize -= 1 ;
         }
         else if (!isGreat)
         {
