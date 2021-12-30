@@ -8,9 +8,13 @@ public class FireTypes : MonoBehaviour
     public int index { get; private set; }
     Vector3 createPos;
     bool isFire;
+    [SerializeField] GameObject rect;
+    [SerializeField] GameObject up;
     // Start is called before the first frame update
     void Start()
     {
+        up.gameObject.SetActive(true);
+        rect.gameObject.SetActive(false);
         isFire = true;
     }
 
@@ -20,13 +24,15 @@ public class FireTypes : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             index = 0;
+            up.gameObject.SetActive(true);
+            rect.gameObject.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             index = 1;
+            up.gameObject.SetActive(false);
+            rect.gameObject.SetActive(true);
         }
-        
-
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
