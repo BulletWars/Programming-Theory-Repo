@@ -34,4 +34,8 @@ public class MainManager : MonoBehaviour
         }
 
     }
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
 }
